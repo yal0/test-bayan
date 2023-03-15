@@ -1,0 +1,32 @@
+body {
+    background: #f4f4f4;
+    color: #000000;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+h1 {
+    margin: 0 0 3vh;
+    font-size: 2.5rem;
+}
+
+.accordion {
+    width: 80vw;
+    margin: 5vh auto 2vh;
+}
+
+.accordion__item-header {
+    font-size: 1.7rem;
+    padding-right: 2.2rem;
+}
+
+.accordion__item {
+    font-size: 1rem;
+    cursor: pointer;
+    display: block;
+    background: #ffffff;
+    margin-bottom: 3vh;
+    padding: 1.5%;
+    box-shadow: 0 0.2rem 0.6rem -0.1rem rgba(0,0,0,0.1);
+    -webkit-tap-highlight-color: transparent;
+}

@@ -1,0 +1,54 @@
+.accordion__chk {
+    display: none;
+}
+
+/* чекбокс не выбран -- прячем контент */
+.accordion__item p {
+    max-height: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.accordion__item p img{
+    height: 0;
+    transition: 0.5s;
+}
+
+/* чекбокс выбран -- показываем контент */
+.accordion__chk:checked ~ p {  
+    overflow: hidden;
+    max-height: 50vh;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.accordion__chk:checked ~ p img {  
+    height: 50vh; 
+    transition: 0.5s;
+}
+
+/* когда мышь за пределами списка убираем крестики и плюсики и подсвечиваем закрытые пункты */
+.accordion__chk:checked ~ h2 {  
+    color: #000000;
+    background: url('../images/cross.svg') no-repeat right top/0%;
+    transition: 0.5s;
+}
+
+.accordion__chk ~ h2 {  
+    color: #cc071e;
+    background: url('../images/plus.svg') no-repeat right top/0%;
+    transition: 0.5s;
+}
+
+/* при нажатии на пункт списка меняем курсор и подсвечиваем заголовок */
+.accordion__item:active {
+    cursor: grabbing;
+}
+
+.accordion__item:active h2
+{
+    color: #cc071e !important;
+    transition: 0s !important;
+}
+
+/**************** hover ******************/
